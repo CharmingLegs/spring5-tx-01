@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.cc_business_order//DTD Mapper 3.0//EN" "http://mybatis.cc_business_order/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.fall.thee.charming.legs.mapper.PersonMapper">
+    <select id="selectMaxId" resultType="LONG">
+        SELECT MAX(DISTINCT id) AS id FROM person
+    </select>
+</mapper>
